@@ -156,7 +156,7 @@ set_default(){
             if [ "$input" -eq 1 ] ; then
                 echo "google" > ~/.search/.defaultSearchEngine.txt
             elif [ "$input" -eq 2 ]; then
-                echo "duck" > ~/.search/.defaultSearchEngine.txt
+                echo "duckduckgo" > ~/.search/.defaultSearchEngine.txt
             elif [ "$input" -eq 3 ]; then
                 echo "yahoo" > ~/.search/.defaultSearchEngine.txt
             elif [ "$input" -eq 4 ]; then
