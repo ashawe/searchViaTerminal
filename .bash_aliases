@@ -31,7 +31,7 @@ search() {
             ;;
 
         "-vim")
-            echo "Searching on Youtube: $@"
+            echo "Searching on Vimeo: $@"
             xdg-open "https://vimeo.com/search?q=$search"
             ;;
 
