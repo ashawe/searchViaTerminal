@@ -17,7 +17,7 @@ Helps to search anything via the terminal.
 
 In case you're getting `Command 'search' not found` you need to follow these steps:
 * open the file ~/.bashrc using a text editor like gedit (`gedit ~/.bashrc`) or sublime, (`subl ~/.bashrc`) or any other...
-* Make sure you have the following code in it:\
+* Make sure you have the following code in it:
   ``` 
     if [ -f ~/.bash_aliases ]; then
         . ~/.bash_aliases
