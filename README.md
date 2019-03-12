@@ -64,3 +64,20 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
  `-setdefault`: set default search engines
 
  `--help`: displays help
+ 
+ ## Default Search Engines:
+ * Google for web
+ * Google for images
+ * Youtube for videos
+ 
+ 
+ ## To-Do List:
+ [x] Directly search for video
+ [x] Directly search for image
+ [x] Option to select default search engine
+ [ ] Adding Bing support for images
+ [ ] Adding Yahoo support for images
+ [ ] Adding Duck Duck GO support for images
+ [ ] Adding Bing support for videos
+ [ ] Adding Yahoo support for videos
+ [ ] Adding Duck Duck GO support for videos
