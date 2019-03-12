@@ -1,5 +1,8 @@
 # SearchViaTerminal
 Helps to search anything via the terminal.
+* search from terminal. Open in browser
+* search on different websites
+* search specifically for videos / images
 
 ## INSTALLATION:
 Download the file .bash_aliases
