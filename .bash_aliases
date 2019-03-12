@@ -36,7 +36,7 @@ search() {
             ;;
 
         "-img")
-            engine=$(<~/.search/.defaulImgSearchEngine.txt)
+            engine=$(<~/.search/.defaultImgSearchEngine.txt)
             $engine $@
             ;;
 
@@ -188,17 +188,29 @@ set_default(){
 
 bing() {
     echo "Searching on bing : $@"
-    xdg-open "https://www.bing.com/search?q=$@"
+    search=""
+    for term in $@; do
+        search="$search%20$term"
+    done
+    xdg-open "https://www.bing.com/search?q=$search"
 }
 
 yahoo() {
     echo "Searching on Yahoo: $@"
-    xdg-open "https://search.yahoo.com/search?p=$@"
+    search=""
+    for term in $@; do
+        search="$search%20$term"
+    done
+    xdg-open "https://search.yahoo.com/search?p=$search"
 }
 
 duckduckgo() {
     echo "Searching on Duck Duck Go: $@"
-    xdg-open "https://duckduckgo.com/?q=$@"
+    search=""
+    for term in $@; do
+        search="$search%20$term"
+    done
+    xdg-open "https://duckduckgo.com/?q=$search"
 }
 
 google() {
