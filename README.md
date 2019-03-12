@@ -31,8 +31,7 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
           
 ###### Available options:
 
--g: \
-          searches on google
+ `-g`: searches on google
 
 > Available Sub Options for google:\
                   -i: 
@@ -44,24 +43,24 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
                   -m: 
                       searches on google maps
 
--duk:searches on duck duck go
+ `-duk`: searches on duck duck go
    
- -yh:  searches on yahoo
+ `-yh`:  searches on yahoo
 
- -bng: searches on bing
+ `-bng`: searches on bing
 
- -wik: searches on wikipedia
+ `-wik`: searches on wikipedia
 
- -ytb: searches on youtube
+ `-ytb`: searches on youtube
 
- -vim: searches on vimeo
+ `-vim`: searches on vimeo
 
- -img: searches on default image search engine
+ `-img`: searches on default image search engine
 
- -vid: searches on default video search engine
+ `-vid`: searches on default video search engine
 
- -default: shows default search engines
+ `-default`: shows default search engines
 
- -setdefault: set default search engines
+ `-setdefault`: set default search engines
 
- --help: displays help
+ `--help`: displays help
