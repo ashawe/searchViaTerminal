@@ -75,9 +75,9 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
  - [x] Directly search for video
  - [x] Directly search for image
  - [x] Option to select default search engine
- - [ ] Adding Bing support for images
- - [ ] Adding Yahoo support for images
- - [ ] Adding Duck Duck GO support for images
- - [ ] Adding Bing support for videos
- - [ ] Adding Yahoo support for videos
- - [ ] Adding Duck Duck GO support for videos
+ - [ ] Add Bing support for images
+ - [ ] Add Yahoo support for images
+ - [ ] Add Duck Duck GO support for images
+ - [ ] Add Bing support for videos
+ - [ ] Add Yahoo support for videos
+ - [ ] Add Duck Duck GO support for videos
