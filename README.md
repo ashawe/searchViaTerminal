@@ -8,6 +8,7 @@ Helps to search anything via the terminal.
 
 * Download the file .bash_aliases
 * Place it in your home ( ~ ) folder.
+* The file is a hidden file so make sure you enable "show hidden files" in files or else navigate to the directory where the file is downloaded and execute the command `cp .bash_aliases ~/`
 * Open the terminal at home ( ~ )
 * Give it execute permission:
   * `chmod +7 .bash_aliases`
@@ -15,7 +16,7 @@ Helps to search anything via the terminal.
   * `search_init` ( to initialise the default search engines )
 
 
-In case you're getting `Command 'search' not found` you need to follow these steps:
+In case you're getting `Command 'search_init' not found` you need to follow these steps:
 * open the file ~/.bashrc using a text editor like gedit (`gedit ~/.bashrc`) or sublime, (`subl ~/.bashrc`) or any other...
 * Make sure you have the following code in it:
   ``` 
