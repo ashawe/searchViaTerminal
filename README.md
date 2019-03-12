@@ -5,18 +5,28 @@ Helps to search anything via the terminal.
 * search specifically for videos / images
 
 ## INSTALLATION:
-Download the file .bash_aliases
 
-Place it in your home ( ~ ) folder.
+* Download the file .bash_aliases
+* Place it in your home ( ~ ) folder.
+* Open the terminal at home ( ~ )
+* Give it execute permission:
+  * `chmod +7 .bash_aliases`
+* Then run the command:
+  * `search_init` ( to initialise the default search engines )
 
-Open the terminal at home ( ~ )
 
-Give it execute permission:
-  `chmod +7 .bash_aliases`
+In case you're getting `Command 'search' not found` you need to follow these steps:
+* open the file ~/.bashrc using a text editor like gedit (`gedit ~/.bashrc`) or sublime, (`subl ~/.bashrc`) or any other...
+* Make sure you have the following code in it:\
+  ``` 
+    if [ -f ~/.bash_aliases ]; then
+        . ~/.bash_aliases
+    fi
+    ```
+* otherwise add the above code at the end of the file
 
-Then run the command:
-  `search_init`
-( to initialise the default search engines )
+Make sure your system has `xdg-open`
+
 
 NOW YOU CAN USE THE SEARCH FEATURES!!
 
