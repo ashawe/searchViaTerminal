@@ -275,3 +275,8 @@ wikipedia() {
     done
     xdg-open "https://en.wikipedia.org/w/index.php?search=$search"	
 }
+
+
+open() {
+    xdg-open "$@" 
+}
