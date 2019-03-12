@@ -34,13 +34,13 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
  `-g`: searches on google
 
 > Available Sub Options for google:\
-                  -i: 
+                  `-i`: 
                       searches on google images\
-                  -n: 
+                  `-n`: 
                       searches on google news\
-                  -v: 
+                  `-v`: 
                       searches on google videos\
-                  -m: 
+                  `-m`: 
                       searches on google maps
 
  `-duk`: searches on duck duck go
