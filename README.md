@@ -37,42 +37,31 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
 > Available Sub Options for google:\
                   -i: 
                       searches on google images\
-                  -n: \
+                  -n: 
                       searches on google news\
-                  -v: \
+                  -v: 
                       searches on google videos\
-                  -m: \
+                  -m: 
                       searches on google maps
 
- -duk:\
-          searches on duck duck go
-          
- -yh:\
-          searches on yahoo
- 
- -bng:\
-          searches on bing
- 
- -wik:\
-          searches on wikipedia
- 
- -ytb:\
-          searches on youtube
- 
- -vim:\
-          searches on vimeo
- 
- -img:\
-          searches on default image search engine
- 
- -vid:\
-          searches on default video search engine
- 
- -default:\
-          shows default search engines
+-duk:searches on duck duck go
+   
+ -yh:  searches on yahoo
 
--setdefault:\
-          set default search engines
+ -bng: searches on bing
 
- --help:\
-          displays help
+ -wik: searches on wikipedia
+
+ -ytb: searches on youtube
+
+ -vim: searches on vimeo
+
+ -img: searches on default image search engine
+
+ -vid: searches on default video search engine
+
+ -default: shows default search engines
+
+ -setdefault: set default search engines
+
+ --help: displays help
