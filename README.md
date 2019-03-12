@@ -83,12 +83,12 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
  
  ## Additional Features:
  * Open any URL using `open "website_url"` ( make sure to use http://  or https:// )
- * Direct search using `google search_term` command
- * Direct search using `youtube search_term` command
- * Direct search using `duckduckgo search_term` command
- * Direct search using `bing search_term` command
- * Direct search using `yahoo search_term` command
- * Direct search using `wikipedia search_term` command
+ * Direct search using `google search_string` command
+ * Direct search using `youtube search_string` command
+ * Direct search using `duckduckgo search_string` command
+ * Direct search using `bing search_string` command
+ * Direct search using `yahoo search_string` command
+ * Direct search using `wikipedia search_string` command
 
  
  ## To-Do List:
