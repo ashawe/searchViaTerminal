@@ -29,7 +29,7 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
 ###### Available options:
 
 -g: \
-          searches on google\
+          searches on google
 
 > Available Sub Options for google:\
                   -i: 
