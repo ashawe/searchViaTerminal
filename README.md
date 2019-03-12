@@ -1,7 +1,7 @@
-# searchViaTerminal
+# SearchViaTerminal
 Helps to search anything via the terminal.
 
-# INSTALLATION:
+## INSTALLATION:
 Download the file .bash_aliases
 
 Place it in your home ( ~ ) folder.
@@ -17,7 +17,7 @@ Then run the command:
 
 NOW YOU CAN USE THE SEARCH FEATURES!!
 
-# HOW TO USE:
+## HOW TO USE:
   SYNTAX :
   
   `search [-option] [-suboption] search_string`\
@@ -25,38 +25,51 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
           
   `search search_string`\
           Will search search_string on default search engine
-Available options:
+          
+###### Available options:
 
- -g: \
+-g: \
           searches on google\
-              Available Sub Options:\
-                  -i: \
+
+> Available Sub Options for google:\
+                  -i: 
                       searches on google images\
                   -n: \
                       searches on google news\
                   -v: \
                       searches on google videos\
                   -m: \
-                      searches on google maps\
+                      searches on google maps
+
  -duk:\
-          searches on duck duck go\
+          searches on duck duck go
+          
  -yh:\
-          searches on yahoo\
+          searches on yahoo
+ 
  -bng:\
-          searches on bing\
+          searches on bing
+ 
  -wik:\
-          searches on wikipedia\
+          searches on wikipedia
+ 
  -ytb:\
-          searches on youtube\
+          searches on youtube
+ 
  -vim:\
-          searches on vimeo\
+          searches on vimeo
+ 
  -img:\
-          searches on default image search engine\
+          searches on default image search engine
+ 
  -vid:\
-          searches on default video search engine\
+          searches on default video search engine
+ 
  -default:\
-          shows default search engines\
- -setdefault:\
-          set default search engines\
+          shows default search engines
+
+-setdefault:\
+          set default search engines
+
  --help:\
           displays help
