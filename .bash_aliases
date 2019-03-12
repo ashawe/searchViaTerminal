@@ -129,7 +129,7 @@ search_init(){
     touch ~/.search/.defaultImgSearchEngine.txt
 
     echo "google" > ~/.search/.defaultSearchEngine.txt
-    echo "google" > ~/.search/.defaultImgSearchEngine.txt
+    echo "google -i" > ~/.search/.defaultImgSearchEngine.txt
     echo "youtube" > ~/.search/.defaultVidSearchEngine.txt
 
 }
@@ -275,7 +275,6 @@ wikipedia() {
     done
     xdg-open "https://en.wikipedia.org/w/index.php?search=$search"	
 }
-
 
 open() {
     xdg-open "$@" 
