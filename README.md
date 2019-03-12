@@ -81,6 +81,15 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
  * Google for images
  * Youtube for videos
  
+ ## Additional Features:
+ * Open any URL using `open "website_url"` ( make sure to use http://  or https:// )
+ * Direct search using `google search_term` command
+ * Direct search using `youtube search_term` command
+ * Direct search using `duckduckgo search_term` command
+ * Direct search using `bing search_term` command
+ * Direct search using `yahoo search_term` command
+ * Direct search using `wikipedia search_term` command
+
  
  ## To-Do List:
  - [x] Directly search for video
