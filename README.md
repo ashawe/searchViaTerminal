@@ -4,6 +4,9 @@ Helps to search anything via the terminal.
 * search on different websites
 * search specifically for videos / images
 
+## Why should I use it?
+Imagine, you're working on a project and you want to search for an image of a cat. Now, who want's to open up a browser and then type the search terms and then tailor the results on the basis of images or videos etc when you can do it with one single handy and easy to use command. Just type the command and the rest will be taken care of. Want images of cute cats? Done. With a single command just from your terminal. We all have our terminals open don't we? So why waste time? Use searchViaTerminal!
+
 ## INSTALLATION:
 
 * Download the file .bash_aliases
