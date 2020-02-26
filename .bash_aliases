@@ -198,8 +198,8 @@ bing() {
             for term in $@; do
                 search="$search%20$term"
             done
-            echo "Google Image search for: $@"
-            xdg-open "hhttps://www.bing.com/images/search?q=$search"
+            echo "Bing Image search for: $@"
+            xdg-open "https://www.bing.com/images/search?q=$search"
         ;;
     	*)
     	    echo "Searching on bing : $@"
