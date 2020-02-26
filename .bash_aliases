@@ -90,6 +90,9 @@ search() {
             
             echo " -bng: "
             echo "          searches on bing"
+	    echo "		Available Sub Options:"
+	    echo "		    -i: "
+	    echo "			searches on bing images"
             
             echo " -wik: "
             echo "          searches on wikipedia"
@@ -187,12 +190,24 @@ set_default(){
 }
 
 bing() {
-    echo "Searching on bing : $@"
-    search=""
-    for term in $@; do
-        search="$search%20$term"
-    done
-    xdg-open "https://www.bing.com/search?q=$search"
+    first=$1
+    search=""   
+    case $first in
+        "-i")
+            shift
+            for term in $@; do
+                search="$search%20$term"
+            done
+            echo "Bing Image search for: $@"
+            xdg-open "https://www.bing.com/images/search?q=$search"
+        ;;
+    	*)
+    	    echo "Searching on bing : $@"
+	    for term in $@; do
+		search="$search%20$term"
+	    done
+            xdg-open "https://www.bing.com/search?q=$search"
+    esac
 }
 
 yahoo() {
