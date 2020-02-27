@@ -93,7 +93,13 @@ search() {
 	    echo "		Available Sub Options:"
 	    echo "		    -i: "
 	    echo "			searches on bing images"
-            
+	    echo "		    -n: "
+	    echo "			searches on bing news"
+	    echo "		    -v: "
+	    echo "			searches on bing videos"
+	    echo "		    -m: "
+	    echo "			searches on bing maps"
+	    
             echo " -wik: "
             echo "          searches on wikipedia"
             
@@ -170,9 +176,12 @@ set_default(){
         elif [ "$input" -eq 2 ]; then
             echo "Change default search engine for image to:"
             echo "  1) Google"
+	    echo "  2) Bing"
             read input
             if [ "$input" -eq 1 ] ; then
                 echo "google -i" > ~/.search/.defaultImgSearchEngine.txt
+	    elif [ "$input" -eq 2 ]; then
+                echo "duckduckgo -i" > ~/.search/.defaultImgSearchEngine.txt
             fi
         elif [ "$input" -eq 3 ]; then
             echo "Change default search engine for video to:"
@@ -200,6 +209,30 @@ bing() {
             done
             echo "Bing Image search for: $@"
             xdg-open "https://www.bing.com/images/search?q=$search"
+        ;;
+      "-v")
+            shift
+            for term in $@; do
+                search="$search%20$term"
+            done
+            echo "Bing Video search for: $@"
+            xdg-open "https://www.bing.com/videos/search?q=$search"
+        ;;
+	"-n")
+            shift
+            for term in $@; do
+                search="$search%20$term"
+            done
+            echo "Bing News search for: $@"
+            xdg-open "https://www.bing.com/news/search?q=$search"
+        ;;
+	"-m")
+            shift
+            for term in $@; do
+                search="$search%20$term"
+            done
+            echo "Bing Maps search for: $@"
+            xdg-open "https://www.bing.com/maps?q=$search"
         ;;
     	*)
     	    echo "Searching on bing : $@"
