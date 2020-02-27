@@ -187,11 +187,14 @@ set_default(){
             echo "Change default search engine for video to:"
             echo "  1) Youtube"
             echo "  2) Google"
+	    echo "  3) Bing"
             read input
             if [ "$input" -eq 1 ] ; then
                 echo "youtube" > ~/.search/.defaultVidSearchEngine.txt
             elif [ "$input" -eq 2 ] ; then 
                 echo "google -v" > ~/.search/.defaultVidSearchEngine.txt 
+	    elif [ "$input" -eq 3 ] ; then 
+                echo "bing -v" > ~/.search/.defaultVidSearchEngine.txt 
             fi
         fi
     fi
