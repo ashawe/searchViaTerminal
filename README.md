@@ -62,6 +62,15 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
  `-yh`:  searches on yahoo
 
  `-bng`: searches on bing
+ > Available Sub Options for bing:\
+                  `-i`: 
+                      searches on bing images\
+                  `-n`: 
+                      searches on bing news\
+                  `-v`: 
+                      searches on bing videos\
+                  `-m`: 
+                      searches on bing maps
 
  `-wik`: searches on wikipedia
 
@@ -95,12 +104,15 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
 
  
  ## To-Do List:
+ - [ ] Add Yahoo support for images
+ - [ ] Add Duck Duck GO support for images
+ - [ ] Add Yahoo support for videos
+ - [ ] Add Duck Duck GO support for videos
+
  - [x] Directly search for video
  - [x] Directly search for image
  - [x] Option to select default search engine
  - [x] Add Bing support for images
- - [ ] Add Yahoo support for images
- - [ ] Add Duck Duck GO support for images
- - [ ] Add Bing support for videos
- - [ ] Add Yahoo support for videos
- - [ ] Add Duck Duck GO support for videos
+ - [x] Add Bing support for videos
+ - [x] Add Bing support for news
+ - [x] Add Bing support for maps
