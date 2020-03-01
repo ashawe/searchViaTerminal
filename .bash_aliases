@@ -83,8 +83,16 @@ search() {
             echo "                      searches on google maps"
 
             echo " -duk: "
-            echo "          searches on duck duck go"
-            
+            echo "          searches on DuckDuckGo"
+            echo "                  -i: "
+            echo "                      searches on DuckDuckGo images"
+            echo "                  -n: "
+            echo "                      searches on DuckDuckGo news"
+            echo "                  -v: "
+            echo "                      searches on DuckDuckGo videos"
+            echo "                  -m: "
+            echo "                      searches on DuckDuckGo maps"
+
             echo " -yh: "
             echo "          searches on yahoo"
             
@@ -158,7 +166,7 @@ set_default(){
         if [ "$input" -eq 1 ] ; then
             echo "Change default search engine to:"
             echo "  1) Google"
-            echo "  2) Duck Duck Go"
+            echo "  2) DuckDuckGo"
             echo "  3) Yahoo"
             echo "  4) Bing"
             read input
@@ -177,10 +185,13 @@ set_default(){
             echo "Change default search engine for image to:"
             echo "  1) Google"
 	    echo "  2) Bing"
+	    echo "  3) DuckDuckGo"
             read input
             if [ "$input" -eq 1 ] ; then
                 echo "google -i" > ~/.search/.defaultImgSearchEngine.txt
 	    elif [ "$input" -eq 2 ]; then
+                echo "bing -i" > ~/.search/.defaultImgSearchEngine.txt
+	    elif [ "$input" -eq 3 ]; then
                 echo "duckduckgo -i" > ~/.search/.defaultImgSearchEngine.txt
             fi
         elif [ "$input" -eq 3 ]; then
@@ -188,6 +199,7 @@ set_default(){
             echo "  1) Youtube"
             echo "  2) Google"
 	    echo "  3) Bing"
+	    echo "  4) DuckDuckGo"
             read input
             if [ "$input" -eq 1 ] ; then
                 echo "youtube" > ~/.search/.defaultVidSearchEngine.txt
@@ -195,6 +207,8 @@ set_default(){
                 echo "google -v" > ~/.search/.defaultVidSearchEngine.txt 
 	    elif [ "$input" -eq 3 ] ; then 
                 echo "bing -v" > ~/.search/.defaultVidSearchEngine.txt 
+	    elif [ "$input" -eq 4 ] ; then 
+                echo "duckduckgo -v" > ~/.search/.defaultVidSearchEngine.txt 
             fi
         fi
     fi
@@ -256,12 +270,48 @@ yahoo() {
 }
 
 duckduckgo() {
-    echo "Searching on Duck Duck Go: $@"
-    search=""
-    for term in $@; do
-        search="$search%20$term"
-    done
-    xdg-open "https://duckduckgo.com/?q=$search"
+    first=$1
+    search=""   
+    case $first in
+        "-i")
+            shift
+            for term in $@; do
+                search="$search%20$term"
+            done
+            echo "DuckDuckGo Image search for: $@"
+            xdg-open "https://duckduckgo.com/?q=$search&iax=images&ia=images"
+        ;;
+        "-v")
+            shift
+            for term in $@; do
+                search="$search%20$term"
+            done
+            echo "DuckDuckGo Video search for: $@"
+            xdg-open "https://duckduckgo.com/?q=$search&iax=videos&ia=videos"
+            ;;
+        "-n")
+            shift
+            for term in $@; do
+                search="$search%20$term"
+            done
+            echo "DuckDuckGo News search for: $@"
+            xdg-open "https://duckduckgo.com/?q=$search&iar=news&ia=news"
+            ;;
+        "-m")
+            shift
+            for term in $@; do
+                search="$search%20$term"
+            done
+            echo "DuckDuckGo Maps search for: $@"
+            xdg-open "https://duckduckgo.com/?q=$search&iaxm=maps"
+            ;;
+        *)
+            echo "Searching on DuckDuckGo: $@"
+	    for term in $@; do
+		search="$search%20$term"
+	    done
+            xdg-open "https://duckduckgo.com/?q=$search"
+    esac
 }
 
 google() {
