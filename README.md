@@ -57,7 +57,8 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
                   `-m`: 
                       searches on google maps
 
- `-duk`: searches on DuckDuckGo
+ `-duk`: searches on DuckDuckGo:
+> Available Sub Options for DuckDuckGo:\
                   `-i`: 
                       searches on DuckDuckGo images\
                   `-n`: 
@@ -66,6 +67,7 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
                       searches on DuckDuckGo videos\
                   `-m`: 
                       searches on DuckDuckGo maps
+
  `-yh`:  searches on yahoo
 
  `-bng`: searches on bing
