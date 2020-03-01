@@ -57,8 +57,15 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
                   `-m`: 
                       searches on google maps
 
- `-duk`: searches on duck duck go
-   
+ `-duk`: searches on DuckDuckGo
+                  `-i`: 
+                      searches on DuckDuckGo images\
+                  `-n`: 
+                      searches on DuckDuckGo news\
+                  `-v`: 
+                      searches on DuckDuckGo videos\
+                  `-m`: 
+                      searches on DuckDuckGo maps
  `-yh`:  searches on yahoo
 
  `-bng`: searches on bing
@@ -105,9 +112,9 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
  
  ## To-Do List:
  - [ ] Add Yahoo support for images
- - [ ] Add Duck Duck GO support for images
  - [ ] Add Yahoo support for videos
- - [ ] Add Duck Duck GO support for videos
+ - [ ] Add Yahoo support for news
+ - [ ] Add Yahoo support for answers
 
  - [x] Directly search for video
  - [x] Directly search for image
@@ -116,3 +123,7 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
  - [x] Add Bing support for videos
  - [x] Add Bing support for news
  - [x] Add Bing support for maps
+ - [x] Add DuckDuckGo support for images
+ - [x] Add DuckDuckGo support for videos
+ - [x] Add DuckDuckGo support for news
+ - [x] Add DuckDuckGo support for maps
