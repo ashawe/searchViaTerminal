@@ -261,12 +261,48 @@ bing() {
 }
 
 yahoo() {
-    echo "Searching on Yahoo: $@"
-    search=""
-    for term in $@; do
-        search="$search%20$term"
-    done
-    xdg-open "https://search.yahoo.com/search?p=$search"
+    first=$1
+    search=""   
+    case $first in
+        "-i")
+            shift
+            for term in $@; do
+                search="$search%20$term"
+            done
+            echo "Yahoo Image search for: $@"
+            xdg-open "https://images.search.yahoo.com/search/images?p=$search"
+        ;;
+        "-v")
+            shift
+            for term in $@; do
+                search="$search%20$term"
+            done
+            echo "Yahoo Video search for: $@"
+            xdg-open "https://video.search.yahoo.com/search/video?p=$search"
+            ;;
+        "-n")
+            shift
+            for term in $@; do
+                search="$search%20$term"
+            done
+            echo "Yahoo News search for: $@"
+            xdg-open "https://news.search.yahoo.com/search/news?p=$search"
+            ;;
+        "-a")
+            shift
+            for term in $@; do
+                search="$search%20$term"
+            done
+            echo "Yahoo Answers search for: $@"
+            xdg-open "https://answers.search.yahoo.com/search/answers?p=$search"
+            ;;
+        *)
+            echo "Searching on DuckDuckGo: $@"
+	    for term in $@; do
+		search="$search%20$term"
+	    done
+		    xdg-open "https://search.yahoo.com/search?p=$search"
+    esac
 }
 
 duckduckgo() {
@@ -306,7 +342,7 @@ duckduckgo() {
             xdg-open "https://duckduckgo.com/?q=$search&iaxm=maps"
             ;;
         *)
-            echo "Searching on DuckDuckGo: $@"
+            echo "Searching on Yahoo: $@"
 	    for term in $@; do
 		search="$search%20$term"
 	    done
