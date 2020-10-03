@@ -297,7 +297,7 @@ yahoo() {
             xdg-open "https://answers.search.yahoo.com/search/answers?p=$search"
             ;;
         *)
-            echo "Searching on DuckDuckGo: $@"
+            echo "Searching on Yahoo: $@"
 	    for term in $@; do
 		search="$search%20$term"
 	    done
