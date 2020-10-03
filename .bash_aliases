@@ -342,7 +342,7 @@ duckduckgo() {
             xdg-open "https://duckduckgo.com/?q=$search&iaxm=maps"
             ;;
         *)
-            echo "Searching on Yahoo: $@"
+            echo "Searching on DuckDuckGo: $@"
 	    for term in $@; do
 		search="$search%20$term"
 	    done
