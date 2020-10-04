@@ -68,7 +68,18 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
                   `-m`: 
                       searches on DuckDuckGo maps
 
- `-yh`:  searches on yahoo
+ `-yh`:  searches on Yahoo
+> Available Sub Options for Yahoo:\
+                  `-i`: 
+                      searches on Yahoo images\
+                  `-n`: 
+                      searches on Yahoo news\
+                  `-v`: 
+                      searches on Yahoo videos\
+                  `-a`: 
+                      searches on Yahoo answers
+
+
 
  `-bng`: searches on bing
  > Available Sub Options for bing:\
@@ -113,10 +124,10 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
 
  
  ## To-Do List:
- - [ ] Add Yahoo support for images
- - [ ] Add Yahoo support for videos
- - [ ] Add Yahoo support for news
- - [ ] Add Yahoo support for answers
+ - [x] Add Yahoo support for images
+ - [x] Add Yahoo support for videos
+ - [x] Add Yahoo support for news
+ - [x] Add Yahoo support for answers
 
  - [x] Directly search for video
  - [x] Directly search for image
