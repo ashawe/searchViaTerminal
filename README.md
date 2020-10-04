@@ -76,7 +76,7 @@ NOW YOU CAN USE THE SEARCH FEATURES!!
                       searches on Yahoo news\
                   `-v`: 
                       searches on Yahoo videos\
-                  `-m`: 
+                  `-a`: 
                       searches on Yahoo answers
 
 
